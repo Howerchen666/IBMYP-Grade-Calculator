@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		659B1CB0247902E2008FF0E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CAF247902E2008FF0E4 /* AppDelegate.swift */; };
+		659B1CB2247902E2008FF0E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CB1247902E2008FF0E4 /* SceneDelegate.swift */; };
+		659B1CB4247902E2008FF0E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CB3247902E2008FF0E4 /* ContentView.swift */; };
+		659B1CB6247902E3008FF0E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659B1CB5247902E3008FF0E4 /* Assets.xcassets */; };
+		659B1CB9247902E3008FF0E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659B1CB8247902E3008FF0E4 /* Preview Assets.xcassets */; };
+		659B1CBC247902E3008FF0E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659B1CBA247902E3008FF0E4 /* LaunchScreen.storyboard */; };
+		659B1CC524790472008FF0E4 /* Overall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CC424790472008FF0E4 /* Overall.swift */; };
+		659B1CC724790581008FF0E4 /* Edit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CC624790581008FF0E4 /* Edit.swift */; };
+		659B1CE024790D12008FF0E4 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CCE24790D12008FF0E4 /* BarChartView.swift */; };
+		659B1CE124790D12008FF0E4 /* BarChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CCF24790D12008FF0E4 /* BarChartRow.swift */; };
+		659B1CE224790D12008FF0E4 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CD024790D12008FF0E4 /* LabelView.swift */; };
+		659B1CE324790D12008FF0E4 /* BarChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CD124790D12008FF0E4 /* BarChartCell.swift */; };
+		659B1CE424790D12008FF0E4 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CD224790D12008FF0E4 /* Helpers.swift */; };
+		659B1CE524790D12008FF0E4 /* PieChartRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CD424790D12008FF0E4 /* PieChartRow.swift */; };
+		659B1CE624790D12008FF0E4 /* PieChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CD524790D12008FF0E4 /* PieChartCell.swift */; };
+		659B1CE724790D12008FF0E4 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CD624790D12008FF0E4 /* PieChartView.swift */; };
+		659B1CE824790D12008FF0E4 /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CD824790D12008FF0E4 /* IndicatorPoint.swift */; };
+		659B1CE924790D12008FF0E4 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CD924790D12008FF0E4 /* LineView.swift */; };
+		659B1CEA24790D12008FF0E4 /* Legend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CDA24790D12008FF0E4 /* Legend.swift */; };
+		659B1CEB24790D12008FF0E4 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CDB24790D12008FF0E4 /* LineChartView.swift */; };
+		659B1CEC24790D12008FF0E4 /* MagnifierRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CDC24790D12008FF0E4 /* MagnifierRect.swift */; };
+		659B1CED24790D12008FF0E4 /* Path+QuadCurve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CDD24790D12008FF0E4 /* Path+QuadCurve.swift */; };
+		659B1CEE24790D12008FF0E4 /* MultiLineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CDE24790D12008FF0E4 /* MultiLineChartView.swift */; };
+		659B1CEF24790D12008FF0E4 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CDF24790D12008FF0E4 /* Line.swift */; };
+		659B1CF12479214A008FF0E4 /* grades.json in Resources */ = {isa = PBXBuildFile; fileRef = 659B1CF02479214A008FF0E4 /* grades.json */; };
+		659B1CF3247921D8008FF0E4 /* subjectinfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CF2247921D8008FF0E4 /* subjectinfo.swift */; };
+		659B1CF52479230A008FF0E4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659B1CF42479230A008FF0E4 /* DetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		659B1CAC247902E2008FF0E4 /* Grade-Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grade-Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		659B1CAF247902E2008FF0E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		659B1CB1247902E2008FF0E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		659B1CB3247902E2008FF0E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		659B1CB5247902E3008FF0E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		659B1CB8247902E3008FF0E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		659B1CBB247902E3008FF0E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		659B1CBD247902E3008FF0E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		659B1CC3247902F4008FF0E4 /* Grade-Calculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Grade-Calculator.entitlements"; sourceTree = "<group>"; };
+		659B1CC424790472008FF0E4 /* Overall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overall.swift; sourceTree = "<group>"; };
+		659B1CC624790581008FF0E4 /* Edit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edit.swift; sourceTree = "<group>"; };
+		659B1CCE24790D12008FF0E4 /* BarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		659B1CCF24790D12008FF0E4 /* BarChartRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartRow.swift; sourceTree = "<group>"; };
+		659B1CD024790D12008FF0E4 /* LabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		659B1CD124790D12008FF0E4 /* BarChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartCell.swift; sourceTree = "<group>"; };
+		659B1CD224790D12008FF0E4 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		659B1CD424790D12008FF0E4 /* PieChartRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartRow.swift; sourceTree = "<group>"; };
+		659B1CD524790D12008FF0E4 /* PieChartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartCell.swift; sourceTree = "<group>"; };
+		659B1CD624790D12008FF0E4 /* PieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		659B1CD824790D12008FF0E4 /* IndicatorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorPoint.swift; sourceTree = "<group>"; };
+		659B1CD924790D12008FF0E4 /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		659B1CDA24790D12008FF0E4 /* Legend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Legend.swift; sourceTree = "<group>"; };
+		659B1CDB24790D12008FF0E4 /* LineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
+		659B1CDC24790D12008FF0E4 /* MagnifierRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagnifierRect.swift; sourceTree = "<group>"; };
+		659B1CDD24790D12008FF0E4 /* Path+QuadCurve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Path+QuadCurve.swift"; sourceTree = "<group>"; };
+		659B1CDE24790D12008FF0E4 /* MultiLineChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiLineChartView.swift; sourceTree = "<group>"; };
+		659B1CDF24790D12008FF0E4 /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		659B1CF02479214A008FF0E4 /* grades.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = grades.json; sourceTree = "<group>"; };
+		659B1CF2247921D8008FF0E4 /* subjectinfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = subjectinfo.swift; sourceTree = "<group>"; };
+		659B1CF42479230A008FF0E4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		659B1CA9247902E2008FF0E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		659B1CA3247902E2008FF0E4 = {
+			isa = PBXGroup;
+			children = (
+				659B1CCC24790D12008FF0E4 /* SwiftUICharts */,
+				659B1CAE247902E2008FF0E4 /* Grade-Calculator */,
+				659B1CAD247902E2008FF0E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		659B1CAD247902E2008FF0E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				659B1CAC247902E2008FF0E4 /* Grade-Calculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		659B1CAE247902E2008FF0E4 /* Grade-Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				659B1CC3247902F4008FF0E4 /* Grade-Calculator.entitlements */,
+				659B1CAF247902E2008FF0E4 /* AppDelegate.swift */,
+				659B1CB1247902E2008FF0E4 /* SceneDelegate.swift */,
+				659B1CB3247902E2008FF0E4 /* ContentView.swift */,
+				659B1CC424790472008FF0E4 /* Overall.swift */,
+				659B1CC624790581008FF0E4 /* Edit.swift */,
+				659B1CF42479230A008FF0E4 /* DetailView.swift */,
+				659B1CB5247902E3008FF0E4 /* Assets.xcassets */,
+				659B1CBA247902E3008FF0E4 /* LaunchScreen.storyboard */,
+				659B1CBD247902E3008FF0E4 /* Info.plist */,
+				659B1CF02479214A008FF0E4 /* grades.json */,
+				659B1CF2247921D8008FF0E4 /* subjectinfo.swift */,
+				659B1CB7247902E3008FF0E4 /* Preview Content */,
+			);
+			path = "Grade-Calculator";
+			sourceTree = "<group>";
+		};
+		659B1CB7247902E3008FF0E4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				659B1CB8247902E3008FF0E4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		659B1CCC24790D12008FF0E4 /* SwiftUICharts */ = {
+			isa = PBXGroup;
+			children = (
+				659B1CCD24790D12008FF0E4 /* BarChart */,
+				659B1CD224790D12008FF0E4 /* Helpers.swift */,
+				659B1CD324790D12008FF0E4 /* PieChart */,
+				659B1CD724790D12008FF0E4 /* LineChart */,
+			);
+			path = SwiftUICharts;
+			sourceTree = "<group>";
+		};
+		659B1CCD24790D12008FF0E4 /* BarChart */ = {
+			isa = PBXGroup;
+			children = (
+				659B1CCE24790D12008FF0E4 /* BarChartView.swift */,
+				659B1CCF24790D12008FF0E4 /* BarChartRow.swift */,
+				659B1CD024790D12008FF0E4 /* LabelView.swift */,
+				659B1CD124790D12008FF0E4 /* BarChartCell.swift */,
+			);
+			path = BarChart;
+			sourceTree = "<group>";
+		};
+		659B1CD324790D12008FF0E4 /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				659B1CD424790D12008FF0E4 /* PieChartRow.swift */,
+				659B1CD524790D12008FF0E4 /* PieChartCell.swift */,
+				659B1CD624790D12008FF0E4 /* PieChartView.swift */,
+			);
+			path = PieChart;
+			sourceTree = "<group>";
+		};
+		659B1CD724790D12008FF0E4 /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				659B1CD824790D12008FF0E4 /* IndicatorPoint.swift */,
+				659B1CD924790D12008FF0E4 /* LineView.swift */,
+				659B1CDA24790D12008FF0E4 /* Legend.swift */,
+				659B1CDB24790D12008FF0E4 /* LineChartView.swift */,
+				659B1CDC24790D12008FF0E4 /* MagnifierRect.swift */,
+				659B1CDD24790D12008FF0E4 /* Path+QuadCurve.swift */,
+				659B1CDE24790D12008FF0E4 /* MultiLineChartView.swift */,
+				659B1CDF24790D12008FF0E4 /* Line.swift */,
+			);
+			path = LineChart;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		659B1CAB247902E2008FF0E4 /* Grade-Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 659B1CC2247902E7008FF0E4 /* Build configuration list for PBXNativeTarget "Grade-Calculator" */;
+			buildPhases = (
+				659B1CA8247902E2008FF0E4 /* Sources */,
+				659B1CA9247902E2008FF0E4 /* Frameworks */,
+				659B1CAA247902E2008FF0E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Grade-Calculator";
+			productName = "Grade-Calculator";
+			productReference = 659B1CAC247902E2008FF0E4 /* Grade-Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		659B1CA4247902E2008FF0E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Hower Chen";
+				TargetAttributes = {
+					659B1CAB247902E2008FF0E4 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 659B1CA7247902E2008FF0E4 /* Build configuration list for PBXProject "Grade-Calculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 659B1CA3247902E2008FF0E4;
+			productRefGroup = 659B1CAD247902E2008FF0E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				659B1CAB247902E2008FF0E4 /* Grade-Calculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		659B1CAA247902E2008FF0E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659B1CF12479214A008FF0E4 /* grades.json in Resources */,
+				659B1CBC247902E3008FF0E4 /* LaunchScreen.storyboard in Resources */,
+				659B1CB9247902E3008FF0E4 /* Preview Assets.xcassets in Resources */,
+				659B1CB6247902E3008FF0E4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		659B1CA8247902E2008FF0E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				659B1CB0247902E2008FF0E4 /* AppDelegate.swift in Sources */,
+				659B1CC524790472008FF0E4 /* Overall.swift in Sources */,
+				659B1CE724790D12008FF0E4 /* PieChartView.swift in Sources */,
+				659B1CB2247902E2008FF0E4 /* SceneDelegate.swift in Sources */,
+				659B1CF3247921D8008FF0E4 /* subjectinfo.swift in Sources */,
+				659B1CE424790D12008FF0E4 /* Helpers.swift in Sources */,
+				659B1CED24790D12008FF0E4 /* Path+QuadCurve.swift in Sources */,
+				659B1CC724790581008FF0E4 /* Edit.swift in Sources */,
+				659B1CEC24790D12008FF0E4 /* MagnifierRect.swift in Sources */,
+				659B1CEA24790D12008FF0E4 /* Legend.swift in Sources */,
+				659B1CE824790D12008FF0E4 /* IndicatorPoint.swift in Sources */,
+				659B1CE624790D12008FF0E4 /* PieChartCell.swift in Sources */,
+				659B1CEB24790D12008FF0E4 /* LineChartView.swift in Sources */,
+				659B1CEF24790D12008FF0E4 /* Line.swift in Sources */,
+				659B1CE924790D12008FF0E4 /* LineView.swift in Sources */,
+				659B1CE324790D12008FF0E4 /* BarChartCell.swift in Sources */,
+				659B1CE524790D12008FF0E4 /* PieChartRow.swift in Sources */,
+				659B1CF52479230A008FF0E4 /* DetailView.swift in Sources */,
+				659B1CEE24790D12008FF0E4 /* MultiLineChartView.swift in Sources */,
+				659B1CB4247902E2008FF0E4 /* ContentView.swift in Sources */,
+				659B1CE224790D12008FF0E4 /* LabelView.swift in Sources */,
+				659B1CE124790D12008FF0E4 /* BarChartRow.swift in Sources */,
+				659B1CE024790D12008FF0E4 /* BarChartView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		659B1CBA247902E3008FF0E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				659B1CBB247902E3008FF0E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		659B1CBE247902E3008FF0E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		659B1CBF247902E3008FF0E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		659B1CC0247902E3008FF0E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Grade-Calculator/Grade-Calculator.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"Grade-Calculator/Preview Content\"";
+				DEVELOPMENT_TEAM = BUBRQTXMEC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Grade-Calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.howerchen.cn.Grade-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		659B1CC1247902E3008FF0E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Grade-Calculator/Grade-Calculator.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "\"Grade-Calculator/Preview Content\"";
+				DEVELOPMENT_TEAM = BUBRQTXMEC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Grade-Calculator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.howerchen.cn.Grade-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		659B1CA7247902E2008FF0E4 /* Build configuration list for PBXProject "Grade-Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659B1CBE247902E3008FF0E4 /* Debug */,
+				659B1CBF247902E3008FF0E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		659B1CC2247902E7008FF0E4 /* Build configuration list for PBXNativeTarget "Grade-Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				659B1CC0247902E3008FF0E4 /* Debug */,
+				659B1CC1247902E3008FF0E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 659B1CA4247902E2008FF0E4 /* Project object */;
+}
